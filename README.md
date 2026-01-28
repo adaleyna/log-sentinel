@@ -1,3 +1,5 @@
+![CI](https://github.com/adaleyna/log-sentinel/actions/workflows/ci.yml/badge.svg)
+
 # Log Sentinel (SSH auth.log brute-force detector)
 
 **Purpose:** Parse Linux `auth.log` (sshd) and detect brute-force patterns, then produce a clean report.
