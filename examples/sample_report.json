@@ -1,0 +1,31 @@
+{
+  "summary": {
+    "total_events": 19,
+    "failed_password": 18,
+    "invalid_user": 1,
+    "unique_source_ips": 2,
+    "time_range": {
+      "start": "2026-01-28T12:00:01",
+      "end": "2026-01-28T12:07:20"
+    }
+  },
+  "top_source_ips": [
+    {
+      "ip": "91.121.55.2",
+      "count": 13
+    },
+    {
+      "ip": "45.33.12.10",
+      "count": 6
+    }
+  ],
+  "alerts": [
+    {
+      "ip": "91.121.55.2",
+      "window_start": "2026-01-28T12:01:04",
+      "window_end": "2026-01-28T12:01:19",
+      "count_in_window": 10,
+      "threshold": 10
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "log-sentinel"
+version = "0.1.0"
+description = "Parse SSH auth logs and detect brute-force patterns (authorized use only)."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["python-dateutil>=2.9.0"]
+
+[project.scripts]
+log-sentinel = "log_sentinel.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
